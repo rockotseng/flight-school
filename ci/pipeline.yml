@@ -9,10 +9,10 @@ resources:
   type: cf
   source:
     api: https://api.run.pivotal.io
-    username: ((your cf username))
-    password: ((your cf password))
-    organization: ((your cf organization))
-    space: ((your cf space))
+    username: ((cf-username))
+    password: ((cf-password))
+    organization: ((cf-org))
+    space: ((cf-space))
 
 jobs:
 - name: test-app
