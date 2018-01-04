@@ -15,7 +15,7 @@ resources:
     space: development
 
 jobs:
-- name: development
+- name: build
   plan:
   - get: flight-school
     trigger: true
