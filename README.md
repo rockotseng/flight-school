@@ -12,5 +12,5 @@ fly -t ci login -c http://192.168.100.4:8080
 ```
 
 ```
-fly -t ci set-pipeline -p flight-school -c ci/pipeline.yml -l ~/credentials.yml -v cf-org=rockos-flight-school -v cf-space=development
+fly -t ci set-pipeline -p flight-school -c ci/pipeline.yml -l ~/credentials.yml
 ```
