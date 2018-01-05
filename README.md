@@ -12,7 +12,7 @@ fly -t ci login -c http://192.168.100.4:8080
 
 ## Unit test task
 ```
-fly -t ci execute -c ci/build.yml
+fly -t ci execute -c ci/build.yml -i repo=.
 ```
 
 ## Set pipeline
