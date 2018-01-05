@@ -5,16 +5,17 @@ learn to fly
 
 Please report all issues and feature requests in [concourse/concourse](https://github.com/concourse/concourse/issues).
 
-## Steps
-
+## Login
 ```
 fly -t ci login -c http://192.168.100.4:8080
 ```
 
+## Unit test task
 ```
 fly -t ci execute -c ci/build.yml
 ```
 
+## Set pipeline
 ```
-fly -t ci set-pipeline -p flight-school -c ci/pipeline.yml -l ~/credentials.yml -v cf-org=rockos-flight-school cf-space=development
+fly -t ci set-pipeline -p flight-school -c ci/pipeline.yml -l ~/credentials.yml -v cf-org=rockos-flight-school -v cf-space=development
 ```
