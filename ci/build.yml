@@ -7,7 +7,16 @@ image_resource:
     tag: 2.4.1
 
 inputs:
-- name: flight-school
+- name: repo
 
 run:
-  path: ./flight-school/ci/build.sh
+  # path: repo/ci/build.sh
+  path: bash
+  args:
+  - -exc
+  - |
+  
+    pushd repo
+      bundle install
+      bundle exec rspec
+    popd

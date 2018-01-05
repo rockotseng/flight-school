@@ -21,6 +21,8 @@ jobs:
     trigger: true
   - task: build
     file: flight-school/ci/build.yml
+    input_mapping:
+      repo: flight-school
   - put: flight-school-development
     params:
       manifest: flight-school/manifest.yml

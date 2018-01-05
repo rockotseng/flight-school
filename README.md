@@ -12,5 +12,9 @@ fly -t ci login -c http://192.168.100.4:8080
 ```
 
 ```
+fly -t ci execute -c ci/build.yml
+```
+
+```
 fly -t ci set-pipeline -p flight-school -c ci/pipeline.yml -l ~/credentials.yml
 ```
