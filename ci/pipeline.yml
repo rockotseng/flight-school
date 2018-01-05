@@ -11,8 +11,8 @@ resources:
     api: https://api.run.pivotal.io
     username: ((cf-username))
     password: ((cf-password))
-    organization: rockos-flight-school
-    space: development
+    organization: ((cf-org))
+    space: ((cf-space))
 
 jobs:
 - name: build

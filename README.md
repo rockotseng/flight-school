@@ -16,5 +16,5 @@ fly -t ci execute -c ci/build.yml
 ```
 
 ```
-fly -t ci set-pipeline -p flight-school -c ci/pipeline.yml -l ~/credentials.yml
+fly -t ci set-pipeline -p flight-school -c ci/pipeline.yml -l ~/credentials.yml -v cf-org=rockos-flight-school cf-space=development
 ```
