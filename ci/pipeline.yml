@@ -25,6 +25,6 @@ jobs:
       repo: flight-school-repo
   - put: flight-school-development
     params:
-      manifest: flight-school/manifest.yml
+      manifest: flight-school-repo/manifest.yml
       environment_variables:
         SPRING_PROFILES_ACTIVE: development
