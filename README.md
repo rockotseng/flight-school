@@ -19,3 +19,8 @@ fly -t ci execute -c ci/build.yml -i repo=.
 ```
 fly -t ci set-pipeline -p flight-school -c ci/pipeline.yml -l ~/credentials.yml -v cf-org=rockos-flight-school -v cf-space=development
 ```
+
+## Remove pipeline
+```
+fly -t ci destroy-pipeline -p flight-school
+```
