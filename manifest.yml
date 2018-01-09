@@ -2,3 +2,4 @@ name: flight-school
 memory: 128M
 random-route: true
 path: .
+buildpack: https://github.com/cloudfoundry/ruby-buildpack.git#v1.7.8
